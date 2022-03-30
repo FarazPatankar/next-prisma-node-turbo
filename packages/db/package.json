@@ -1,0 +1,21 @@
+{
+  "name": "db",
+  "version": "0.0.1",
+  "private": true,
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "migrate:dev": "prisma migrate dev",
+    "generate": "prisma generate",
+    "build": "prisma migrate deploy && prisma generate && tsc"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.6.0"
+  },
+  "devDependencies": {
+    "prisma": "^3.7.0",
+    "typescript": "^4.5.3",
+    "tsconfig": "*",
+    "config": "*"
+  }
+}
